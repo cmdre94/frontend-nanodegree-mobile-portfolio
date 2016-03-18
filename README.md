@@ -15,8 +15,8 @@ Modified code for index.html with the following optimizations:
 -Defered scripts until after the page loads
 
 
----pizza.html---
-Modified code for pizza.html with the following optimizations:
+---views/js/main.js---
+Modified code in views/js/main.js with the following optimizations:
 
 Removed determineDx function
 
