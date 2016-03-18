@@ -1,5 +1,46 @@
 ## Website Performance Optimization portfolio project
 
+Optimizations are listed first, followed by the instructions
+
+****Here are the optimizations****
+
+---index.html---
+Modified code for index.html with the following optimizations:
+-Added media query to only access css/print.css  when printing the page
+-Inlined CSS
+-Used @font-face to get fonts.
+-Used optimized images:
+	-profilepic-1.jpg
+	-pizzeria-2.jpg
+-Defered scripts until after the page loads
+
+
+---pizza.html---
+Modified code for pizza.html with the following optimizations:
+
+Removed determineDx function
+
+Modified changePizzaSizes function:
+ 	-Added newWidth variable
+	-Changed the slider value to a percent width
+	-Moved variable randomPizzas outside the for loop
+
+Moved variable pizzasDiv outside the for loop that creates and appends all of the pizzas when the page loads
+
+Modified function updatePositions that moves the sliding background pizzas based on scroll position:
+	-Moved variables outside the for loop
+	-Created phaseArray so the for loop iterates
+	 through the array of phases
+	-Used getElementsByClassName instead of
+	 the less efficientquerySelectorAll
+
+Modified function that generates sliding pizzas when the page loads:
+	-Set a row variable with a dynamic value based
+	 on the height of the screen. This ensures 	  	 that the rows will be correct no matter the 	  	 screen height
+	-created variable movingPizzas and moved it 	 	 outside the for loop
+
+****End of optimizations****
+
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
 To get started, check out the repository, inspect the code,
